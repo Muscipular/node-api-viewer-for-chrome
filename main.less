@@ -1,0 +1,78 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.nav {
+  position: fixed;
+  top: 5px;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+
+  .filter {
+    margin: 2px;
+    height: 30px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .module-list {
+    position: absolute;
+    top: 35px;
+    bottom: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    word-break: keep-all;
+    left: 0;
+    right: 0;
+  }
+}
+
+.content {
+  position: fixed;
+  top: 5px;
+  bottom: 0;
+  left: 300px;
+  padding: 0px 0.5em;
+  overflow: auto;
+
+  .viewer {
+    max-width: 950px;
+    min-width: 780px;
+    width: 80%;
+  }
+}
+
+.module-list {
+  ul {
+    margin: 0;
+    padding-left: 1.5em;
+  }
+  li > ul {
+    padding-left: 1em;
+  }
+  li.close {
+    > ul {
+      display: none;
+    }
+  }
+
+  a {
+    display: block;
+    color: #480;
+    text-decoration: none;
+    //    border-bottom: 1px dotted #480;
+
+    &:hover {
+      color: #000;
+      //      border-bottom-color: #fff;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}

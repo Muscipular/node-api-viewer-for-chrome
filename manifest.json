@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+
+    "name": "Node.js api document extension",
+    "description": "This extension demonstrates a 'browser action' with kittens.",
+    "version": "0.1",
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "Node.js api document"
+    },
+    "permissions": [
+        "http://nodejs.org/",
+        "tabs",
+        "storage",
+        "unlimitedStorage"
+    ]
+}
